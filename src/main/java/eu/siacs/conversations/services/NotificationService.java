@@ -136,8 +136,9 @@ public class NotificationService {
 			final boolean doNotify = (!(this.mIsInForeground && this.mOpenConversation == null) || !isScreenOn)
 					&& !account.inGracePeriod()
 					&& !this.inMiniGracePeriod(account);
+			final boolean pebble = mXmppConnectionService.getPreferences().getBoolean("pebble_notification", false);
 			updateNotification(doNotify);
-			if (doNotify) {
+			if (doNotify && pebble) {
 				notifyPebble(message);
 			}
 		}

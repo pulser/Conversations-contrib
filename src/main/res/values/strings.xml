@@ -111,6 +111,8 @@
     <string name="pref_notifications_summary">Notify when a new message arrives</string>
     <string name="pref_vibrate">Vibrate</string>
     <string name="pref_vibrate_summary">Also vibrate when a new message arrives</string>
+    <string name="pref_pebble">Pebble</string>
+    <string name="pref_pebble_summary">Notify a connected pebble when a new message arrives</string>
     <string name="pref_sound">Sound</string>
     <string name="pref_sound_summary">Play ringtone with notification</string>
     <string name="pref_conference_notifications">Conference notifications</string>
